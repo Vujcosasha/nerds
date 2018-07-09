@@ -3,6 +3,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>NERDS - главная страница</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="main.css">
 </head>
 <body>
 	<header>
@@ -10,7 +13,7 @@
 		<div class="conteiner">
 
 			<div class="logo">
-				<a><img src="#" width="400" height="200" alt="NERDS" ></a>
+				<a><img src="img/nerds-logo.svg" width="160" height="65" alt="NERDS" ></a>
 			</div>
 
 			<nav class="main-navigation">
@@ -22,7 +25,7 @@
 						<a href="#">Клиенты</a>
 					</li>
 					<li>
-						<a href="#">Магазин</a>
+						<a href="catalog.html">Магазин</a>
 					</li>
 					<li>
 						<a href="#">Контакты</a>
@@ -39,11 +42,13 @@
 	</header>
 
 	<main>
-		<div class="conteiner">
-			<section class="features-slider">
+		
+		<section class="features-slider">
+
+			<div class="conteiner">
 
 				<div class="slider-controls">
-
+	
 					<input id="firstSlide" type="radio" name="slide" checked>
 					<input id="sekondSlide" type="radio" name="slide">
 					<input id="thirdSlide" type="radio" name="slide">
@@ -55,23 +60,23 @@
 						<p><b class="slide-lead">Дорого, долго, скурпулезно</b></p>
 						<p>Математически выверенный дизайн 
 						для вашего сайта или мобильного приложения.</p>
-						<a class="btn-slide btn-red" href="#">Узнать больше</a>
+						<a class="btn btn-red" href="#">Узнать больше</a>
 					</div>
-
-					<img class="slide-img" src="#" width="333" height="319" alt="">
+	
+					<img class="slide-img" src="img/slide1.png" width="698" height="413" alt="">
 
 				</div>
 
 				<div class="slide-2">
 
 					<div class="feature-text">
-						<p><b class="slide-lead">Любим математикукак никто другой</b></p>
+						<p><b class="slide-lead">Любим математику как никто другой</b></p>
 						<p>Никакого креатива, только математические формулы 
 						для расчета идеальных пропорций.</p>
-						<a class="btn-slide btn-red" href="#">Узнать больше</a>
+						<a class="btn btn-red" href="#">Узнать больше</a>
 					</div>
 
-					<img class="slide-img" src="#" width="333" height="319" alt="">
+					<img class="slide-img" src="img/slide2.png" width="663" height="430" alt="">
 
 				</div>
 
@@ -80,90 +85,88 @@
 						<p><b class="slide-lead">Только ночь, только хардкор</b></p>
 						<p>Работать днем, как все? Мы против этого.
 						Ближе к полуночи работа только начинается.</p>
-						<a class="btn-slide btn-red" href="#">Узнать больше</a>
+						<a class="btn btn-red" href="#">Узнать больше</a>
 					</div>
 
-					<img class="slide-img" src="#" width="333" height="319" alt="">
+					<img class="slide-img" src="img/slide3.png" width="759" height="411" alt="">
 
 				</div>
-				
+			</div>		
+		</section>
+
+		<section class="servises" class="conteiner">
+			<ul class="servises-items">
+				<li>
+					<img src="img/illustration-1.png" width="300" height="146" alt="ВЕБ-САЙТЫ" class="servises-image">
+					<h2>ВЕБ-САЙТЫ</h2>
+					<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+					<a class="btn btn-red" href="#" >Заказать</a>
+				</li>
+
+				<li>
+					<img src="img/illustration-2.png" width="300" height="146" alt="ПРИЛОЖЕНИЯ" class="servises-image">
+					<h2>ПРИЛОЖЕНИЯ</h2>
+					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+					<a class="btn btn-green" href="#">Заказать</a>
+				</li>
+
+				<li>
+					<img src="img/illustration-3.png" width="300" height="146" alt="ПРЕЗЕНТАЦИИ" class="servises-image">
+					<h2>ПРЕЗЕНТАЦИИ</h2>
+					<p>Вы даже не подозреваете, насколько вы изумительны!</p>
+					<a class="btn btn-yelow" href="#">Заказать</a>
+				</li>
+			</ul>
 			</section>
 
-			<section class="servises">
-				<ul class="servises-items">
-					<li>
-						<img src="#" alt="ВЕБ-САЙТЫ" class="servises-image">
-						<h2>ВЕБ-САЙТЫ</h2>
-						<p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-						<a class="btn-servs btn-red" href="#" ></a>
-					</li>
+		<section class="about-as"  class="conteiner">
 
-					<li>
-						<img src="#" alt="ПРИЛОЖЕНИЯ" class="servises-image">
-						<h2>ПРИЛОЖЕНИЯ</h2>
-						<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-						<a class="btn-servs btn-green" href="#"></a>
-					</li>
-
-					<li>
-						<img src="#" alt="ПРЕЗЕНТАЦИИ" class="servises-image">
-						<h2>ПРЕЗЕНТАЦИИ</h2>
-						<p>Вы даже не подозреваете, насколько вы изумительны!</p>
-						<a class="btn-servs btn-yelow" href="#"></a>
-					</li>
+			<div class="about-right">
+				<p><b class="about-lead">Мы — маленькая, но гордая
+				дизайн-студия из Краснодара.</b></p>
+				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+				превыше креатива. Работаем не покладая рук, как роботы.</p>
+				<b>Выполняем заказы на разработку:</b>
+				<ul class="servises-list">
+					<li>Веб-сайтов любой сложности</li>
+					<li>Мобильных приложений для iOS и Android</li>
+					<li>Слайдшоу и видео для корпоративных презентаций</li>
 				</ul>
-			</section>
-
-			<section class="about-as">
-
-				<div class="about-right">
-					<p><b class="about-lead">Мы — маленькая, но гордая
-					дизайн-студия из Краснодара.</b></p>
-					<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
-					превыше креатива. Работаем не покладая рук, как роботы.</p>
-					<b>Выполняем заказы на разработку:</b>
-					<ul class="servises-list">
-						<li>Веб-сайтов любой сложности</li>
-						<li>Мобильных приложений для iOS и Android</li>
-						<li>Слайдшоу и видео для корпоративных презентаций</li>
-					</ul>
-				</div>
-
-				<div class="about-left">
-					<img src="#" alt="NERDS" class="abaut-logo">
-					<div class="about-fitchers">
-						<p>с 2004 года Любим точность во всем:</p>
-						<ul>
-							<li><b>146%</b> <br> Уровень
-							самоотдачи</li>
-							<li><b>100%</b> <br> Соблюдение 
-							сроков</li>
-							<li><b>50%</b> <br> Минимальная
-							предоплата</li>
-						</ul>
-					</div>
-				</div>
-
-			</section>
-
-			<div class="partners">
-
-				<ul class="partners-logo">
-
-					<li><a href="#"><img src="#" alt="HTMLAcademi"></a></li>
-
-					<li><a href="#"><img src="#" alt="Borodinski"></a></li>
-
-					<li><a href="#"><img src="#" alt="Pink"></a></li>
-
-					<li><a href="#"><img src="#" alt="Mishka"></a></li>
-
-				</ul>
-
 			</div>
 
-		</div>
+			<div class="about-left">
+				<img src="img/nerds-illustration.png" width="360" height="208" alt="NERDS" class="abaut-logo">
+				<div class="about-fitchers">
+					<p>с 2004 года Любим точность во всем:</p>
+					<ul>
+						<li><b>146%</b> <br> Уровень
+						самоотдачи</li>
+						<li><b>100%</b> <br> Соблюдение 
+						сроков</li>
+						<li><b>50%</b> <br> Минимальная
+						предоплата</li>
+					</ul>
+				</div>
+			</div>
 
+		</section>
+
+		<div class="partners" class="conteiner">
+
+			<ul class="partners-logo">
+
+				<li><a href="#"><img src="img/logo-1.png" width="199" height="68" alt="HTMLAcademi"></a></li>
+
+				<li><a href="#"><img src="img/logo-2.png" width="209" height="90" alt="Borodinski"></a></li>
+
+				<li><a href="#"><img src="img/logo-3.png" width="185" height="52" alt="Pink"></a></li>
+
+				<li><a href="#"><img src="img/logo-4.png" width="173" height="84" alt="Mishka"></a></li>
+
+			</ul>
+
+		</div>
+		
 	</main>
 
 	<footer>
@@ -177,7 +180,7 @@
 					<p>191186, Санкт-Петербург,<br>
 					ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел. +7 (812) 275-75-75</p>
-					<a class="btn-contacts btn-red" href="#">Напишите нам</a>
+					<a class="btn btn-red" href="#">Напишите нам</a>
 				</div>
 
 				<form action="#" method="post" class="write-us hidden">
@@ -199,7 +202,7 @@
 								<textarea name="user-text" id="user-text-input" placeholder="В свободной форме"></textarea>
 							</label>
 						</div>
-						<button type="submit" class="btn-form btn-red">ОТПРАВИТЬ</button>
+						<button type="submit" class="btn btn-red">ОТПРАВИТЬ</button>
 					</fieldset>
 				</form>
 
@@ -214,9 +217,9 @@
 			<div class="social-links">
 
 				<ul class="social-icons">
-					<li><a href="#"><img src="#" alt="Вконтакте"></a></li>
-					<li><a href="#"><img src="#" alt="Фейсбук"></a></li>
-					<li><a href="#"><img src="#" alt="Твитер"></a></li>
+					<li><a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
+					<li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
+					<li><a href="#"><img src="img/insta-icon.svg" width="21" height="21" alt="Твитер"></a></li>
 				</ul>
 
 				<div class="slogan">
