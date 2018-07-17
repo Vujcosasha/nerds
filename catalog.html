@@ -8,9 +8,9 @@
 	<link rel="stylesheet" href="main.css">
 </head>
 <body>
-	<header>
+	<header class="main-header">
 
-		<div class="conteiner">
+		<div class="conteiner main-navigation-block">
 
 			<div class="logo">
 				<a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="NERDS" ></a>
@@ -43,7 +43,7 @@
 
 	<main>
 
-		<section class="header-main">
+		<section class="title-catalog">
 			<div class="conteiner">
 				<h1>Магазин готовых шаблонов</h1>
 			</div>
@@ -84,15 +84,15 @@
 			            <legend class="header-grid">Сетка:</legend>
 			            <label class="radio">
 			              	<input type="radio" name="grid" value="adaptive">
-			              	<span class="radio__label">Адаптивная</span>
+			              	<span class="radio-label">Адаптивная</span>
 			            </label>
 			            <label class="radio">
 			              	<input type="radio" name="grid" value="fixed">
-			              	<span class="radio__label">Фиксированная</span>
+			              	<span class="radio-label">Фиксированная</span>
 			            </label>
 			            <label class="radio">
 			              	<input type="radio" name="grid" value="responsive">
-			              	<span class="radio__label">Резиновая</span>
+			              	<span class="radio-label">Резиновая</span>
 			            </label>
 			          </fieldset>
 
@@ -100,23 +100,23 @@
 			            <legend class="heder-fitchers">Особенности:</legend>
 			            <label class="checkbox">
 			              	<input type="checkbox" name="features" value="slider">
-			              	<span class="checkbox__label">Слайдер</span>
+			              	<span class="checkbox-label">Слайдер</span>
 			            </label>
 			            <label class="checkbox">
 			              	<input type="checkbox" name="features" value="advantages-block">
-			              	<span class="checkbox__label">Блок преимуществ</span>
+			              	<span class="checkbox-label">Блок преимуществ</span>
 			            </label>
 			            <label class="checkbox">
 			              	<input type="checkbox" name="features" value="news">
-			              	<span class="checkbox__label">Новости</span>
+			              	<span class="checkbox-label">Новости</span>
 			            </label>
 			            <label class="checkbox">
 			              	<input type="checkbox" name="features" value="gallery">
-			              	<span class="checkbox__label">Галерея</span>
+			              	<span class="checkbox-label">Галерея</span>
 			            </label>
 			            <label class="checkbox">
 			              	<input type="checkbox" name="features" value="cart">
-			              	<span class="checkbox__label">Корзина</span>
+			              	<span class="checkbox-label">Корзина</span>
 			            </label>
 			          </fieldset>
 
@@ -238,7 +238,7 @@
 							<a href="#" class="page-nam">3</a>
 						</li>
 						<li>
-							<a href="#" class="pagination-btn btn-gray">Следующая</a>
+							<a href="#" class="btn btn-gray">Следующая</a>
 						</li>
 					</ul>
 
@@ -257,11 +257,11 @@
 			<div class="conteiner">
 
 				<div class="contacts">
-					<b>NЁRDS DESIGN STUDIO</b>
+					<b>Nёrds Design Studio</b>
 					<p>191186, Санкт-Петербург,<br>
 					ул. Б. Конюшенная, д. 19/8</p>
 					<p>тел. +7 (812) 275-75-75</p>
-					<a class="btn-contacts btn-red" href="#">Напишите нам</a>
+					<a class="btn btn-red" href="#">Напишите нам</a>
 				</div>
 
 				<form action="#" method="post" class="write-us hidden">
@@ -270,20 +270,20 @@
 						<button type="button" class="close-cross-btn"><span class="visually-hidden">Скрыть</span></button>
 						<div class="conteiner-iput-name">
 							<label class="text-input">Ваше имя:
-								<input type="text" name="user-name" placeholder="Представьтесь, пожалуйста">
+								<input type="text" name="user-name" placeholder="Представьтесь, пожалуйста" class="pop-ap-input">
 							</label>
 						</div>
 						<div class="conteiner-iput-mail">
 							<label class="text-input">Ваш e-mail:
-								<input type="text" name="user-mail" placeholder="Для отправки ответа">
+								<input type="text" name="user-mail" placeholder="Для отправки ответа" class="pop-ap-input">
 							</label>
 						</div>
 						<div class="conteiner-iput-text">
 							<label class="text-input">Текст письма:
-								<textarea name="user-text" id="user-text-input" placeholder="В свободной форме"></textarea>
+								<textarea name="user-text" id="user-text-input" placeholder="В свободной форме"></textarea class="pop-ap-input">
 							</label>
 						</div>
-						<button type="submit" class="btn-form-write btn-red">ОТПРАВИТЬ</button>
+						<button type="submit" class="btn btn-red">ОТПРАВИТЬ</button>
 					</fieldset>
 				</form>
 

@@ -1,28 +1,50 @@
+/*общие*/
 
-body {
+* {
 	padding: 0;
 	margin: 0;
-
+}
+body {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 300;
 	color: #283136;
+
 }
 
 a {
  	text-decoration: none;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/*кнопки*/
+
 .btn {
- 	font-size: 16px;
-	line-height: 18px;
-	font-weight: 500;
+ 	font-weight: 500;
 	color: #ffffff;
 	text-transform: uppercase;
 	text-align: center;
 	vertical-align: middle;
+	display: inline-block;
 	border: none;
+	border-radius: 3px;
 }
 
 .btn-red {
@@ -35,9 +57,10 @@ a {
 }
 
 .btn-red:active {
+	color: #e37376;
+
 	background-color: #d7373b;
 	box-shadow: inset 0 3px 0 0 #c13135;
-	color: #e37376;
 }
 
 .btn-green {
@@ -50,9 +73,10 @@ a {
 }
 
 .btn-green:active {
+	color: #4dc491;
+
 	background-color: #00aa62;
 	box-shadow: inset 0 3px 0 0 #009958;
-	color: #4dc491;
 }
 
 .btn-yelow {
@@ -65,9 +89,10 @@ a {
 }
 
 .btn-yelow:active {
+	color: #ebba53;
+
 	background-color: #e5a722;
 	box-shadow: inset 0 3px 0 0 #ce961f;
-	color: #ebba53;
 }
 
 .btn-gray {
@@ -86,18 +111,27 @@ a {
 	color: #959595;
 }
 
-.main-navigation, .user-block {
- 	line-height: 30px;
+/*шапка*/
+
+.main-navigation,
+.user-block {
+	line-height: 30px;
 	font-weight: 500;
 	color: #000000;
 	text-transform: uppercase;
+	margin-top: 10px;
+}
+
+.user-block a {
+	text-align: right;
 }
 
 .main-navigation ul {
  	list-style: none;
 }
 
-.main-navigation a, .user-block a {
+.main-navigation a,
+ .user-block a {
 	color: #000000;
 }
 
@@ -114,6 +148,10 @@ a {
 	opacity: 0.3;
 }
 
+.user-block{
+	text-align: right;
+}
+
 .logo a:hover,
 .logo a:focus {
 	opacity: 0.8;
@@ -126,13 +164,17 @@ header {
 	background-color: #eeeeee;
 }
 
-.feature-text {
-	text-align: left;
-}
+/*слайдер*/
 
 .slide-lead {
 	font-size: 55px;
 	line-height: 55px;
+	font-weight: 500;
+	color: #000000;
+}
+.about-lead {
+	font-size: 45px;
+	line-height: 45px;
 	font-weight: 500;
 	color: #000000;
 }
@@ -141,5 +183,490 @@ header {
 	background-color: #eeeeee;
 }
 
+/*услуги*/
 
+.servises-items {
+	list-style: none;
+}
+
+.servises-items h2 {
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #000000;
+}
+
+/*Инфо-раздел*/
+
+.about-right>b {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000000;
+}
+
+.servises-list {
+	list-style: none;
+}
+
+.about-fitchers>p {
+	text-transform: uppercase;
+	font-weight: 700;
+	color: #000000;
+}
+
+
+.about-fitchers ul {
+	list-style: none;
+}
+
+.about-fitchers b {
+	font-size: 45px;
+	line-height: 55px;
+	font-weight: 700;
+	color: #000000;
+}
+
+/*Партнеры*/
+
+.partners-logo {
+	list-style: none;
+}
+
+/*Подвал*/
+
+.social-icons {
+	list-style: none;
+}
+
+.social-icons a {
+	background-color: #e1e1e1;
+	height: 80px;
+	width: 80px;
+	border-radius: 40px;
+}
+
+.social-icons a:hover,
+.social-icons a:focus {
+	background-color: #e74246;
+}
+
+.slogan b {
+	font-size: 36px;
+	line-height: 56px;
+	font-weight: 700;
+	color: #000000;
+}
+
+/*контакты c картой*/
+
+.contacts b {
+	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
+	font-weight: 500;
+	color: #000000;
+}
+
+/*pop-up*/
+
+.write-us-field {
+	border: 0;
+}
+
+.write-us-legend {
+	font-size: 45px;
+	line-height: 45px;
+	font-weight: 500;
+	color: #000000;
+}
+
+.write-us-field>div {
+	font-weight: 500;
+	color: #000000;
+}
+
+.pop-ap-input {
+	font-size: inherit;
+
+	background-color: transparent;
+	border: 2px solid #d7dcde;
+}
+
+.pop-ap-input:hover {
+	border-color: #b4b9bb;
+}
+
+.pop-ap-input:focus {
+	border-color: #000000;
+}
+
+/*страница магазина*/
+
+
+.head-main {
+	background-color: #eeeeee;
+}
+
+.title-catalog h1 {
+	font-size: 55px;
+	line-height: 55px;
+	font-weight: 500;
+	color: #000000;
+}
+
+/*Каталог*/
+
+.header-price,
+.header-grid,
+.heder-fitchers,
+.sorting-title,
+.card-name {
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 500;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.range-label {
+	text-transform: uppercase;
+}
+
+.range-label input {
+	font-size: inherit;
+	background-color: #ededed;
+	border: 0px;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.range-control {
+	background-color: #ededed;
+}
+
+.radio:hover,
+.checkbox:hover {
+	color: #000000;
+}
+
+.sorting-list,
+.pagination {
+	list-style: none;
+}
+.sorting-list a {
+	color: #000000;
+	opacity: 0.3;
+}
+
+.sorting-list a:hover {
+	opacity: 0.6;
+}
+
+.sorting-list a:active {
+	opacity: 1;
+}
+
+.pagination a {
+	padding: 16px 21px;
+	border-radius: 3px;
+	color: #000000;
+	font-weight: 500;
+	background: #eeeeee;
+}
+
+.pagination a:hover {
+	background: #dfdfdf;
+}
+
+.pagination a:active {
+	color: #959595;
+	background: #d5d5d5;
+	box-shadow: inset 0 3px 0 0 #bfbfbf;
+}
+
+.pagination a.active {
+	background: inherit;
+	box-shadow: inset 0 0 0 3px #dbdbdb;
+}
+
+/*сетка*/
+
+.conteiner {
+	width: 1160px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-navigation-block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 50px; 
+}
+
+.main-navigation ul {
+	margin: 0;
+	padding: 0;
+	display: flex;	
+	width: 440px;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.user-block {
+	display: flex;
+	width: 160px;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+}
+
+/*слайдер*/
+
+.features-slider {
+	position: relative;
+}
+
+.slider-controls {
+	position: absolute;
+	bottom: 50px;
+	right: 50%;
+	z-index: 2;
+}
+
+.slide-content {
+	position: absolute;
+	opacity: 0;
+	min-height: 423px;
+	z-index: -1;
+}
+
+.slide-1 {
+	background-image: url(img/slide1.png);
+	background-position: 430px bottom;
+	background-repeat: no-repeat;
+}
+
+.slide-2 {
+	background-image: url(img/slide2.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+.slide-3 {
+	background-image: url(img/slide3.png);
+	background-position: right bottom;
+	background-repeat: no-repeat;
+}
+
+.feature-text {
+	width: 560px;
+}
+
+.feature-text a {
+	padding: 13px 55px;
+}
+
+.slide-content.active {
+	display: flex;
+	position: relative;
+	z-index: 1;
+	opacity: 1;
+}
+
+.feature-text {
+	margin-top: 70px; 
+}
+
+.slide-lead {
+	display: block;
+	margin-bottom: 25px;
+}
+
+.feature-text a {
+	margin: 40px 0;
+}
+/*Услуги*/
+.servises {
+	border-bottom: 2px solid #eeeeee;
+	padding-bottom: 63px;
+}
+
+.servises-items {
+	display: flex;
+	padding-top: 80px;
+	justify-content: space-between;
+	width: 1100px;
+}
+
+.servises-items li {
+	width: 300px;
+}
+
+.servises-items img,
+.servises-items h2,
+.servises-items p {
+	display: inline-block;
+	margin-bottom: 16px;
+}
+
+.servises-items a {
+	margin: 17px 0;
+	padding: 13px 40px;
+}
+/* инфо-секция*/
+.about-as {
+	border-bottom: 2px solid #eeeeee;
+	padding-bottom: 45px;	
+	display: flex;
+	justify-content: space-between;
+}
+
+.about-right {
+	width: 660px;
+	margin-top: 75px;
+}
+
+.about-lead {
+	display: inline-block;
+	margin-bottom: 33px;
+}
+
+.about-text {
+	margin-bottom: 38px;
+}
+
+.about-right>b {
+	display: inline-block;
+	margin-bottom: 25px;
+}
+
+.servises-list li {
+	margin-bottom: 25px;
+}
+
+.about-left {
+	width: 360px;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.about-left img {
+	margin-bottom: 30px;
+}
+
+.about-fitchers>p {
+	margin-bottom: 35px;
+}
+
+.about-fitchers ul {
+	display: flex;
+}
+	
+.about-fitchers li {
+	width: 120px;
+	text-align: left;
+	line-height: 18px;
+}
+
+.about-fitchers sup {
+	font-size: 28px;
+}
+
+/* Партнеры*/
+
+.partners {
+	border-bottom: 2px solid #eeeeee;
+	padding-bottom: 35px;	
+}
+
+.partners-logo {
+	display: flex;
+	margin-top: 46px;
+	justify-content: space-between;
+}
+
+.partners-logo a {
+	opacity: .2;
+}
+
+.partners-logo a:hover {
+	opacity: 1;
+}
+
+.partners-logo a:active {
+	opacity: .1;
+}
+
+/*контакты + карта*/
+
+.map {
+	width: 100%;
+	position: absolute;
+	min-height: 420px;
+	border: none;
+}
+
+.contacts {
+	position: absolute;
+	z-index: 1;
+	background-color: #ffffff;
+	box-sizing: border-box;
+	margin-top: 55px;
+	width: 320px; 
+	min-height: 310px;
+	padding: 49px;
+}
+
+.contacts b {
+	display: inline-block;
+	margin-bottom: 25px;
+}
+
+.contacts p {
+	margin-bottom: 15px;
+}
+
+.contacts p:nth-child(3) {
+	margin-bottom: 25px;
+}
+
+.contacts a {
+	padding: 13px 45px;
+}
+
+.map-conteiner {
+	position: relative;
+	min-height: 420px;
+	display: flex;
+	padding: 10px;
+	margin-top: 75px;
+}
+
+.futer-botom {
+	display: flex;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.social-icons {
+	display: flex;
+}
+
+.social-icons {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: 120px;
+}
+
+.social-icons a {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-right: 13px;
+}
 
