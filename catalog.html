@@ -10,7 +10,7 @@
 <body>
 	<header class="main-header">
 
-		<div class="conteiner main-navigation-block">
+		<div class="conteiner main-navigation-conteiner">
 
 			<div class="logo">
 				<a href="index.html"><img src="img/nerds-logo.svg" width="160" height="65" alt="NERDS" ></a>
@@ -63,9 +63,9 @@
 				            <legend class="header-price">Стоимость:</legend>
 				           		<div class="range-control">
 					                <div class="range-track">
-					                  	<div class="range-track range-track-value"></div>
-					                  	<button class="range-btn range-btn-min" type="button">
+					          			<button class="range-btn range-btn-min" type="button">
 					                  	</button>
+					                  	<div class="range-track-value"></div>
 					                  	<button class="range-btn range-btn-max" type="button">
 					                  	</button>
 					                </div>
@@ -128,20 +128,22 @@
 
 					<div class="catalog-sorting">
 						<p class="sorting-title">Сортировать:</p>
-						<ul class="sorting-list">
-							<li><a href="#" class="sorting-text">По цене</a></li>
-							<li><a href="#" class="sorting-text">По типу</a></li>
-							<li><a href="#" class="sorting-text">По функционалу</a></li>
-						</ul>
 						<div class="sorting-controls">
-							<a href="#" class="icon-down-dir active"></a>
-							<a href="#" class="icon-up-dir"></a>
+							<ul class="sorting-list">
+								<li><a href="#" class="sorting-text">По цене</a></li>
+								<li><a href="#" class="sorting-text">По типу</a></li>
+								<li><a href="#" class="sorting-text">По названию</a></li>
+							</ul>
+							<div class="sorting-dir">
+								<a href="#" class="icon-down-dir active"></a>
+								<a href="#" class="icon-up-dir">></a>
+							</div>
 						</div>
 					</div>
 
 					<div class="catalog-items">
 
-						<article class="card card--browser" tabindex="0">
+						<article class="card card-browser" tabindex="0">
 							<div class="item-header">
 								<span></span>
 								<span></span>
@@ -155,7 +157,7 @@
 							</div>
 						</article>
 
-						<article class="card card--browser" tabindex="0">
+						<article class="card card-browser" tabindex="0">
 							<div class="item-header">
 								<span></span>
 								<span></span>
@@ -164,12 +166,12 @@
 							<img src="img/img-pink.jpg" class="card-image" alt="Готовый шаблон «Pink App»" width="360" height="576">
 							<div class="card-info">
 								<h2 class="card-name">Pink App</h2>
-								<p class="card-description">Продуктовый лендинг приложения для iOS и Android</p>
+								<p class="card-description">Продуктовый лендинг<br>приложения для iOS и Android</p>
 								<a href="#" class="btn btn-red">9 900 РУБ.</a>
 							</div>
 						</article>
 
-						<article class="card card--browser" tabindex="0">
+						<article class="card card-browser" tabindex="0">
 							<div class="item-header">
 								<span></span>
 								<span></span>
@@ -183,7 +185,7 @@
 							</div>
 						</article>
 
-						<article class="card card--browser" tabindex="0">
+						<article class="card card-browser" tabindex="0">
 							<div class="item-header">
 								<span></span>
 								<span></span>
@@ -192,12 +194,12 @@
 							<img src="img/img-mishka.jpg" class="card-image" alt="Готовый шаблон «Mishka»" width="360" height="576">
 							<div class="card-info">
 								<h2 class="card-name">Mishka</h2>
-								<p class="card-description">Интернет-магазин<br> вязаных игрушек</p>
+								<p class="card-description">Интернет-магазин<br>вязаных игрушек</p>
 								<a href="#" class="btn btn-red">9 900 РУБ.</a>
 							</div>
 						</article>
 
-						<article class="card card--browser" tabindex="0">
+						<article class="card card-browser" tabindex="0">
 							<div class="item-header">
 								<span></span>
 								<span></span>
@@ -206,12 +208,12 @@
 							<img src="img/img-aplus.jpg" class="card-image" alt="Готовый шаблон «A Plus»" width="360" height="576">
 							<div class="card-info">
 								<h2 class="card-name">A Plus</h2>
-								<p class="card-description">Лендинг курсов повышения квалификации</p>
+								<p class="card-description">Лендинг<br>курсов повышения квалификации</p>
 								<a href="#" class="btn btn-red">9 900 РУБ.</a>
 							</div>
 						</article>
 
-						<article class="card card--browser" tabindex="0">
+						<article class="card card-browser" tabindex="0">
 							<div class="item-header">
 								<span></span>
 								<span></span>
@@ -220,7 +222,7 @@
 							<img src="img/img-kvast.jpg" class="card-image" alt="Готовый шаблон «Кваст»" width="360" height="576">
 							<div class="card-info">
 								<h2 class="card-name">Кваст</h2>
-								<p class="card-description">Промо-сайт производителя крафтового кваса</p>
+								<p class="card-description">Промо-сайт<br>производителя крафтового кваса</p>
 								<a href="#" class="btn btn-red">9 900 РУБ.</a>
 							</div>
 						</article>
@@ -254,48 +256,52 @@
 
 		<div class="map-with-contacts">
 
-			<div class="conteiner">
+			<div class="map-conteiner">
 
-				<div class="contacts">
-					<b>Nёrds Design Studio</b>
-					<p>191186, Санкт-Петербург,<br>
-					ул. Б. Конюшенная, д. 19/8</p>
-					<p>тел. +7 (812) 275-75-75</p>
-					<a class="btn btn-red" href="#">Напишите нам</a>
+				<div class="conteiner">
+
+					<div class="contacts">
+						<b>Nёrds Design Studio</b>
+						<p>191186, Санкт-Петербург,<br>
+						ул. Б. Конюшенная, д. 19/8</p>
+						<p>тел. +7 (812) 275-75-75</p>
+						<a class="btn btn-red" href="#">Напишите нам</a>
+					</div>
+
+					<form action="#" method="post" class="write-us hidden visually-hidden">
+						<fieldset class="write-us-field">
+							<legend class="write-us-legend">Напишите нам</legend>
+							<button type="button" class="close-cross-btn"><span class="visually-hidden">Скрыть</span></button>
+							<div class="conteiner-iput-name">
+								<label class="text-input">Ваше имя:
+									<input type="text" name="user-name" placeholder="Представьтесь, пожалуйста" class="pop-ap-input">
+								</label>
+							</div>
+							<div class="conteiner-iput-mail">
+								<label class="text-input">Ваш e-mail:
+									<input type="text" name="user-mail" placeholder="Для отправки ответа" class="pop-ap-input">
+								</label>
+							</div>
+							<div class="conteiner-iput-text">
+								<label class="text-input">Текст письма:
+									<textarea name="user-text" id="user-text-input" placeholder="В свободной форме" class="pop-ap-input"></textarea>
+								</label>
+							</div>
+							<button type="submit" class="btn btn-red">ОТПРАВИТЬ</button>
+						</fieldset>
+					</form>
+
 				</div>
 
-				<form action="#" method="post" class="write-us hidden">
-					<fieldset class="write-us-field">
-						<legend class="write-us-legend">Напишите нам</legend>
-						<button type="button" class="close-cross-btn"><span class="visually-hidden">Скрыть</span></button>
-						<div class="conteiner-iput-name">
-							<label class="text-input">Ваше имя:
-								<input type="text" name="user-name" placeholder="Представьтесь, пожалуйста" class="pop-ap-input">
-							</label>
-						</div>
-						<div class="conteiner-iput-mail">
-							<label class="text-input">Ваш e-mail:
-								<input type="text" name="user-mail" placeholder="Для отправки ответа" class="pop-ap-input">
-							</label>
-						</div>
-						<div class="conteiner-iput-text">
-							<label class="text-input">Текст письма:
-								<textarea name="user-text" id="user-text-input" placeholder="В свободной форме"></textarea class="pop-ap-input">
-							</label>
-						</div>
-						<button type="submit" class="btn btn-red">ОТПРАВИТЬ</button>
-					</fieldset>
-				</form>
+				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989817947686!2d30.320959575543156!3d59.93879621560312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1505742543957"></iframe>
 
 			</div>
 
-			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989817947686!2d30.320959575543156!3d59.93879621560312!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1505742543957"></iframe>
-
-		</div>
+		</div>.
 
 		<div class="conteiner">
 
-			<div class="social-links">
+			<div class="futer__botom">
 
 				<ul class="social-icons">
 					<li><a href="#"><img src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте"></a></li>
