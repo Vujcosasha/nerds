@@ -47,6 +47,7 @@ img {
 	display: inline-block;
 	border: none;
 	border-radius: 3px;
+	cursor: pointer;
 }
 
 .btn-red {
@@ -933,6 +934,8 @@ main {
 .card-info {
 	box-sizing: border-box;
 	position: absolute;
+	bottom: 0;
+	left: 0;
 	width: 360px;
 	text-align: center;
 	padding: 10px;
@@ -1038,4 +1041,8 @@ main {
 .pop-ap .btn {
 	padding: 15px 90px;
 	cursor: pointer;
+}
+
+.pop-ap-show {
+	display: block;
 }
